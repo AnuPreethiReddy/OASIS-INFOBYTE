@@ -1,0 +1,140 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #1c1c1c, #333);
+    color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Container */
+.container {
+    background-color: #222;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: #ff5722;
+    color: #fff;
+    padding: 1.5em;
+}
+
+header h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Main Content */
+.main-content {
+    padding: 2em;
+    color: #d3d3d3;
+}
+
+.main-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1.5em;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.main-content h2 {
+    color: #ff5722;
+    font-size: 1.8em;
+    margin-bottom: 0.8em;
+}
+
+.main-content p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #bbb;
+    margin-bottom: 1em;
+}
+
+/* Quote Section */
+.quote-section {
+    background-color: #333;
+    color: #ffccbc;
+    padding: 2em;
+    border-top: 2px solid #ff5722;
+}
+
+.quote-section blockquote {
+    font-size: 1.3em;
+    margin-bottom: 1em;
+    font-style: italic;
+    quotes: "“" "”";
+}
+
+.quote-section blockquote:before {
+    content: open-quote;
+    font-size: 1.5em;
+    color: #ff5722;
+}
+
+.quote-section blockquote:after {
+    content: close-quote;
+    font-size: 1.5em;
+    color: #ff5722;
+}
+
+.quote-section cite {
+    display: block;
+    margin-top: 0.5em;
+    font-size: 1em;
+    font-weight: bold;
+    color: #ffccbc;
+}
+
+/* Hover Effects */
+header, .quote-section {
+    transition: background-color 0.3s ease;
+}
+
+header:hover {
+    background-color: #e64a19;
+}
+
+.quote-section:hover {
+    background-color: #444;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    .main-content h2 {
+        font-size: 1.6em;
+    }
+
+    .quote-section blockquote {
+        font-size: 1.1em;
+    }
+}

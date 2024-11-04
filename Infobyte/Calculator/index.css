@@ -1,0 +1,98 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000000; /* Black background */
+    font-family: Arial, sans-serif;
+}
+
+.calculator {
+    background-color: #ffffff; /* White background for calculator */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    width: 250px; /* Width remains the same */
+    padding: 15px; /* Padding */
+    text-align: center; /* Center text inside the calculator */
+}
+
+.text-center {
+    margin-bottom: 10px; /* Space below the title */
+    color: #333; /* Dark text for contrast */
+}
+
+.display {
+    width: 100%;
+    height: 35px; /* Decreased height */
+    border: 2px solid #4CAF50; /* Green border */
+    border-radius: 5px;
+    text-align: right;
+    font-size: 18px; /* Decreased font size */
+    padding: 5px; /* Adjusted padding */
+    color: #333;
+    background-color: #e0f7fa; /* Light cyan background */
+    margin-bottom: 15px; /* Space below the display */
+}
+
+.row {
+    display: flex;
+    justify-content: space-between; /* Distribute buttons evenly */
+    margin-bottom: 8px; /* Space between rows */
+}
+
+.button {
+    flex: 1; /* Make buttons take equal width */
+    padding: 12px; /* Adjusted padding */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px; /* Font size */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 3px; /* Add margin around buttons */
+}
+
+/* Button Colors */
+.button:nth-child(4n) {
+    background-color: #FF9800; /* Orange */
+    color: white;
+}
+
+.button:nth-child(4n):hover {
+    background-color: #f57c00; /* Darker orange */
+}
+
+.button:nth-child(4n-1) {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+.button:nth-child(4n-1):hover {
+    background-color: #388E3C; /* Darker green */
+}
+
+.button:nth-child(4n-2) {
+    background-color: #2196F3; /* Blue */
+    color: white;
+}
+
+.button:nth-child(4n-2):hover {
+    background-color: #1976D2; /* Darker blue */
+}
+
+.button:nth-child(4n-3) {
+    background-color: #673AB7; /* Purple */
+    color: white;
+}
+
+.button:nth-child(4n-3):hover {
+    background-color: #512DA8; /* Darker purple */
+}
+
+.button:last-child {
+    background-color: #f44336; /* Red */
+    color: white;
+}
+
+.button:last-child:hover {
+    background-color: #d32f2f; /* Darker red */
+}
